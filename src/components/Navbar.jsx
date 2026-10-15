@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
     return (
         <nav> 
-            <div className="flex justify-between p-4 items-center container mx-auto">
+            <div className="flex justify-between py-4 items-center container mx-auto">
                 <div className="font-bold">
                     <img src="/src/assets/logo-text.png" alt="" />
                 </div>
@@ -21,7 +21,7 @@ const Navbar = () => {
                 </div>
                 <div>
                     <button>Sign In</button>
-                    <button>Sign Up</button>
+                    <button className="bg-pink-500 text-white rounded-3xl px-6 py-2 ml-2.5">Sign Up</button>
                 </div>
             </div>
             {
