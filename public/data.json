@@ -1,7 +1,7 @@
 [
   {
     "id": "card-01",
-    "icon": "/src/assets/icons/react.png",
+    "icon": "/icons/react.png",
     "title": "React",
     "badge": "Popular",
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
@@ -11,7 +11,7 @@
   },
   {
     "id": "card-02",
-    "icon": "/src/assets/icons/vue.png",
+    "icon": "/icons/vue.png",
     "title": "Vue.js",
     "badge": "Versatile",
     "description": "An approachable, performant, and versatile framework for building web user interfaces.",
@@ -21,7 +21,7 @@
   },
   {
     "id": "card-03",
-    "icon": "/src/assets/icons/svelte.png",
+    "icon": "/icons/svelte.png",
     "title": "Svelte",
     "badge": "Fast",
     "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
@@ -31,7 +31,7 @@
   },
   {
     "id": "card-04",
-    "icon": "/src/assets/icons/nextjs.png",
+    "icon": "/icons/nextjs.png",
     "title": "Next.js",
     "badge": null,
     "description": "The React framework for full-stack web applications with hybrid static & server rendering.",
@@ -41,7 +41,7 @@
   },
   {
     "id": "card-05",
-    "icon": "/src/assets/icons/nodejs.png",
+    "icon": "/icons/nodejs.png",
     "title": "Node.js",
     "badge": "Standard",
     "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
@@ -51,7 +51,7 @@
   },
   {
     "id": "card-06",
-    "icon": "/src/assets/icons/postgresql.png",
+    "icon": "/icons/postgresql.png",
     "title": "PostgreSQL",
     "badge": "Top SQL",
     "description": "A powerful, open-source object-relational database system with proven reliability.",
@@ -61,7 +61,7 @@
   },
   {
     "id": "card-07",
-    "icon": "/src/assets/icons/redis.png",
+    "icon": "/icons/redis.png",
     "title": "Redis",
     "badge": "Cache",
     "description": "In-memory data structure store used as a high-speed database, cache, and message broker.",
@@ -71,7 +71,7 @@
   },
   {
     "id": "card-08",
-    "icon": "/src/assets/icons/javascript.png",
+    "icon": "/icons/javascript.png",
     "title": "JavaScript",
     "badge": "Ubiquitous",
     "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
@@ -81,7 +81,7 @@
   },
   {
     "id": "card-09",
-    "icon": "/src/assets/icons/typescript.png",
+    "icon": "/icons/typescript.png",
     "title": "TypeScript",
     "badge": "Essential",
     "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
@@ -91,7 +91,7 @@
   },
   {
     "id": "card-10",
-    "icon": "/src/assets/icons/java.png",
+    "icon": "/icons/java.png",
     "title": "Java",
     "badge": "Robust",
     "description": "A secure, object-oriented programming language designed for portability and scale.",
@@ -101,7 +101,7 @@
   },
   {
     "id": "card-11",
-    "icon": "/src/assets/icons/tailwindcss.png",
+    "icon": "/icons/tailwindcss.png",
     "title": "Tailwind CSS",
     "badge": "Modern",
     "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
@@ -111,7 +111,7 @@
   },
   {
     "id": "card-12",
-    "icon": "/src/assets/icons/docker.png",
+    "icon": "/icons/docker.png",
     "title": "Docker",
     "badge": "Containers",
     "description": "A platform designed to build, share, and run containerized applications reliably.",
