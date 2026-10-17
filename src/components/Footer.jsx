@@ -4,10 +4,10 @@ const Footer = () => {
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
                 <div>
                     <img src="/src/assets/logo-text.png" alt="" />
-                    <p>Curated tools, technologies, and resources for developers building modern software.</p>
+                    <p className="mt-1">Curated tools, technologies, and resources for developers building modern software.</p>
                 </div>            
                 <div>
-                    <h3>PRODUCT</h3>    
+                    <h3 className="font-bold mb-1">PRODUCT</h3>    
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">Technologies</a></li>
@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h3>COMPANY</h3>    
+                    <h3 className="font-bold mb-1">COMPANY</h3>    
                     <ul>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h3>LEGAL</h3>    
+                    <h3 className="font-bold mb-1">LEGAL</h3>    
                     <ul>
                         <li><a href="">Privacy Policy</a></li>
                         <li><a href="">Terms of Service</a></li>
