@@ -1,8 +1,10 @@
+import { Settings, Star } from "lucide-react";
 import toast from "react-hot-toast";
 
 const IssueCard = ({issue, completedIssues, setCompletedIssues}) => {
     const {customer, date, description, id, priority, status, title} = issue;
 
+    console.log(issue.icon);
     const handleCompletedTask = ()=>{
         if(isCompleted){
             return toast.error('already completed');
@@ -13,16 +15,24 @@ const IssueCard = ({issue, completedIssues, setCompletedIssues}) => {
 
     const isCompleted = completedIssues.some(iss=>iss.id === issue.id);
 
-    console.log(isCompleted);
-
-
     return (
         <div onClick={handleCompletedTask} className={`${isCompleted?"cursor-not-allowed":"cursor-pointer"}`}>
-            <div className="w-full rounded-lg border border-gray-400 bg-yellow-50 p-3">
 
+            <div className="w-full rounded-lg border border-gray-400 bg-yellow-50 p-3">
+                <div>
+                    <div className="flex justify-between">
+                        <div>
+                            <img className="w-[30px]" src={`${issue.icon}`} alt="not found" />
+                        </div>
+                        <div>
+                            <p>{issue.badge}</p>
+                        </div>
+                    </div>
+                </div>
                 <div className="flex justify-between">
+                    
                     <h3 className="font-semibold text-gray-900">
-                    {title}
+                        {issue.title}
                     </h3>
 
                     <button className={`rounded-full ${isCompleted? "bg-green-500 text-white":"bg-yellow-300"} px-3 text-sm`}>
@@ -31,8 +41,14 @@ const IssueCard = ({issue, completedIssues, setCompletedIssues}) => {
                 </div>
 
                 <p className="mt-1 text-sm text-gray-600">
-                    {description}
+                    {issue.description}
                 </p>
+
+                <div className="flex justify-between items-center">
+                    <p>{issue.tags}</p>
+                    <p>{issue.level}</p>
+                    <p className="flex items-center gap-1"><Star />{issue.rating}</p>
+                </div>
 
                 <div className="mt-2 flex justify-between text-xs">
                     <div>

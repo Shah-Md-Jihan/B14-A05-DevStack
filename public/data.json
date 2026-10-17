@@ -1,138 +1,122 @@
 [
-{
-"id": 1001,
-"title": "Login Issues - Can't Access Account",
-"description": "Customer is unable to log in after multiple password reset attempts. They report that the account remains inaccessible.",
-"status": "Pending",
-"priority": "High",
-"customer": "John Smith",
-"date": "2024-01-15"
-},
-{
-"id": 1002,
-"title": "Payment Failure - Transaction Declined",
-"description": "Customer's card is being declined despite sufficient balance. They tried multiple times without success.",
-"status": "Pending",
-"priority": "Medium",
-"customer": "Emily Johnson",
-"date": "2024-01-16"
-},
-{
-"id": 1003,
-"title": "Website Loading Slowly",
-"description": "Customer reports that the website takes too long to load, especially on mobile devices.",
-"status": "In Progress",
-"priority": "High",
-"customer": "Michael Brown",
-"date": "2024-01-17"
-},
-{
-"id": 1004,
-"title": "Unable to Reset Password",
-"description": "Customer is not receiving the password reset email despite requesting it several times.",
-"status": "Pending",
-"priority": "Medium",
-"customer": "Sarah Wilson",
-"date": "2024-01-18"
-},
-{
-"id": 1005,
-"title": "Order Confirmation Missing",
-"description": "Customer completed a purchase but has not received an order confirmation email.",
-"status": "Pending",
-"priority": "Low",
-"customer": "David Miller",
-"date": "2024-01-19"
-},
-{
-"id": 1006,
-"title": "Product Image Not Displaying",
-"description": "Several product images are missing from the product details page.",
-"status": "In Progress",
-"priority": "Medium",
-"customer": "Jessica Davis",
-"date": "2024-01-20"
-},
-{
-"id": 1007,
-"title": "Shipping Address Update",
-"description": "Customer needs to update the shipping address for an order that has not yet been dispatched.",
-"status": "Pending",
-"priority": "High",
-"customer": "Robert Garcia",
-"date": "2024-01-21"
-},
-{
-"id": 1008,
-"title": "Refund Request - Order Cancelled",
-"description": "Customer cancelled an order and wants an update regarding the refund processing time.",
-"status": "In Progress",
-"priority": "High",
-"customer": "Linda Martinez",
-"date": "2024-01-22"
-},
-{
-"id": 1009,
-"title": "Unable to Create New Account",
-"description": "Customer receives an error message while submitting the registration form.",
-"status": "Open",
-"priority": "Medium",
-"customer": "James Anderson",
-"date": "2024-01-23"
-},
-{
-"id": 1010,
-"title": "Discount Code Not Working",
-"description": "Customer cannot apply a promotional discount code during checkout.",
-"status": "Pending",
-"priority": "Low",
-"customer": "Patricia Taylor",
-"date": "2024-01-24"
-},
-{
-"id": 1011,
-"title": "Duplicate Payment Charged",
-"description": "Customer reports being charged twice for a single order and requests an investigation.",
-"status": "In Progress",
-"priority": "High",
-"customer": "Christopher Thomas",
-"date": "2024-01-25"
-},
-{
-"id": 1012,
-"title": "Mobile App Crashing",
-"description": "The mobile application crashes when the customer opens the checkout screen.",
-"status": "Open",
-"priority": "High",
-"customer": "Barbara White",
-"date": "2024-01-26"
-},
-{
-"id": 1013,
-"title": "Incorrect Order Status",
-"description": "The order tracking page shows an incorrect status even though the package has shipped.",
-"status": "Pending",
-"priority": "Medium",
-"customer": "Daniel Harris",
-"date": "2024-01-27"
-},
-{
-"id": 1014,
-"title": "Email Notifications Not Received",
-"description": "Customer is not receiving account notifications or important order updates by email.",
-"status": "Pending",
-"priority": "Low",
-"customer": "Jennifer Clark",
-"date": "2024-01-28"
-},
-{
-"id": 1015,
-"title": "Account Access - Two-Factor Authentication",
-"description": "Customer cannot complete two-factor authentication because the verification code is not arriving.",
-"status": "In Progress",
-"priority": "High",
-"customer": "Matthew Lewis",
-"date": "2024-01-29"
-}
+  {
+    "id": "card-01",
+    "icon": "/src/assets/icons/react.png",
+    "title": "React",
+    "badge": "Popular",
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "tags": ["Frontend"],
+    "level": "Beginner-Friendly",
+    "rating": 4.9
+  },
+  {
+    "id": "card-02",
+    "icon": "/src/assets/icons/vue.png",
+    "title": "Vue.js",
+    "badge": "Versatile",
+    "description": "An approachable, performant, and versatile framework for building web user interfaces.",
+    "tags": ["Frontend"],
+    "level": "Beginner-Friendly",
+    "rating": 4.8
+  },
+  {
+    "id": "card-03",
+    "icon": "/src/assets/icons/svelte.png",
+    "title": "Svelte",
+    "badge": "Fast",
+    "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
+    "tags": ["Frontend"],
+    "level": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "id": "card-04",
+    "icon": "/src/assets/icons/nextjs.png",
+    "title": "Next.js",
+    "badge": null,
+    "description": "The React framework for full-stack web applications with hybrid static & server rendering.",
+    "tags": ["Frontend"],
+    "level": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "id": "card-05",
+    "icon": "/src/assets/icons/nodejs.png",
+    "title": "Node.js",
+    "badge": "Standard",
+    "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
+    "tags": ["Backend"],
+    "level": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "id": "card-06",
+    "icon": "/src/assets/icons/postgresql.png",
+    "title": "PostgreSQL",
+    "badge": "Top SQL",
+    "description": "A powerful, open-source object-relational database system with proven reliability.",
+    "tags": ["Database"],
+    "level": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "id": "card-07",
+    "icon": "/src/assets/icons/redis.png",
+    "title": "Redis",
+    "badge": "Cache",
+    "description": "In-memory data structure store used as a high-speed database, cache, and message broker.",
+    "tags": ["Database"],
+    "level": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "id": "card-08",
+    "icon": "/src/assets/icons/javascript.png",
+    "title": "JavaScript",
+    "badge": "Ubiquitous",
+    "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
+    "tags": ["Language"],
+    "level": "Beginner-Friendly",
+    "rating": 4.9
+  },
+  {
+    "id": "card-09",
+    "icon": "/src/assets/icons/typescript.png",
+    "title": "TypeScript",
+    "badge": "Essential",
+    "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
+    "tags": ["Language"],
+    "level": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "id": "card-10",
+    "icon": "/src/assets/icons/java.png",
+    "title": "Java",
+    "badge": "Robust",
+    "description": "A secure, object-oriented programming language designed for portability and scale.",
+    "tags": ["Language"],
+    "level": "Intermediate",
+    "rating": 4.6
+  },
+  {
+    "id": "card-11",
+    "icon": "/src/assets/icons/tailwindcss.png",
+    "title": "Tailwind CSS",
+    "badge": "Modern",
+    "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
+    "tags": ["Styling"],
+    "level": "Beginner-Friendly",
+    "rating": 4.9
+  },
+  {
+    "id": "card-12",
+    "icon": "/src/assets/icons/docker.png",
+    "title": "Docker",
+    "badge": "Containers",
+    "description": "A platform designed to build, share, and run containerized applications reliably.",
+    "tags": ["DevOps"],
+    "level": "Intermediate",
+    "rating": 4.9
+  }
 ]
-
