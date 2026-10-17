@@ -33,7 +33,7 @@ const AllIssues = ({allIssues, completedIssues, setCompletedIssues}) => {
                         
                         }} className="bg-cyan-600 p-2 w-full border rounded text-white font-bold text-xl">Clear All</button>
                     {
-                        completedIssues.length===0?<p className="text-black">No Resolved Tasks Yet</p>
+                        completedIssues.length===0?<p className="text-black">No technology Selected</p>
                         :
                         completedIssues.map(completedIssue=><CompletedIssueCard 
                             key={completedIssue.id} 

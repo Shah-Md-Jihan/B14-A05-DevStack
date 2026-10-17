@@ -1,10 +1,8 @@
-import { Settings, Star } from "lucide-react";
+import { Check, Settings, Star } from "lucide-react";
 import toast from "react-hot-toast";
 
 const IssueCard = ({issue, completedIssues, setCompletedIssues}) => {
-    const {customer, date, description, id, priority, status, title} = issue;
-
-    console.log(issue.icon);
+    
     const handleCompletedTask = ()=>{
         if(isCompleted){
             return toast.error('already completed');
@@ -16,9 +14,9 @@ const IssueCard = ({issue, completedIssues, setCompletedIssues}) => {
     const isCompleted = completedIssues.some(iss=>iss.id === issue.id);
 
     return (
-        <div onClick={handleCompletedTask} className={`${isCompleted?"cursor-not-allowed":"cursor-pointer"}`}>
+        <div>
 
-            <div className="w-full rounded-lg border border-gray-400 bg-yellow-50 p-3">
+            <div className={`w-full rounded-lg border p-3 ${isCompleted? "border-2 border-pink-400":"border-gray-400"} px-3 text-sm`}>
                 <div>
                     <div className="flex justify-between">
                         <div>
@@ -50,19 +48,15 @@ const IssueCard = ({issue, completedIssues, setCompletedIssues}) => {
                     <p className="flex items-center gap-1"><Star />{issue.rating}</p>
                 </div>
 
-                <div className="mt-2 flex justify-between text-xs">
-                    <div>
-                    <span className="mr-2">#{id}</span>
-                    <span className="text-red-500">{priority}</span>
-                    </div>
-
-                    <div className="text-gray-500">
-                    {customer}
-                    </div>
-
-                    <div className="text-gray-500">
-                    {date}
-                    </div>
+                <div>
+                    <button 
+                    onClick={handleCompletedTask} 
+                    disabled={isCompleted}
+                    className="flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-white font-medium px-4 py-2 rounded-full shadow-md w-full disabled:cursor-not-allowed disabled:opacity-70"
+                    >
+                    {isCompleted && <Check className="w-5 h-5 text-white" />}
+                    <span>{isCompleted ? "Completed" : "Add to Stack"}</span>
+                    </button>
                 </div>
 
             </div>
