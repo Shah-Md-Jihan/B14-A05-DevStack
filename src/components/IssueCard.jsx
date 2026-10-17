@@ -14,31 +14,31 @@ const IssueCard = ({issue, completedIssues, setCompletedIssues}) => {
     const isCompleted = completedIssues.some(iss=>iss.id === issue.id);
 
     return (
-        <div>
+        <div >
 
-            <div className={`w-full rounded-lg border p-3 ${isCompleted? "border-2 border-pink-400":"border-gray-400"} px-3 text-sm`}>
+            <div className={`h-full flex flex-col justify-between w-full rounded-lg border p-3 ${isCompleted? "border-2 border-pink-400":"border-gray-400"} px-3 text-sm`}>
                 <div>
                     <div className="flex justify-between">
                         <div>
                             <img className="w-[30px]" src={`${issue.icon}`} alt="not found" />
                         </div>
                         <div>
-                            <p>{issue.badge}</p>
+                            <p className="bg-pink-100 px-3 py-0 rounded-xl text-pink-500">{issue.badge}</p>
                         </div>
                     </div>
                 </div>
                 <div className="flex justify-between">
                     
-                    <h3 className="font-semibold text-gray-900">
+                    <h3 className="font-semibold text-gray-900 text-[18px] my-2">
                         {issue.title}
                     </h3>
                 </div>
 
-                <p className="mt-1 text-sm text-gray-600">
+                <p className="mt-1 text-sm text-gray-600 mb-2">
                     {issue.description}
                 </p>
 
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mb-2">
                     <p>{issue.tags}</p>
                     <p>{issue.level}</p>
                     <p className="flex items-center gap-1"><span class="text-yellow-400 text-xl">★</span> <span className="mt-1">{issue.rating}</span></p>

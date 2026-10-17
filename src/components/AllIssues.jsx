@@ -12,7 +12,7 @@ const AllIssues = ({allIssues, completedIssues, setCompletedIssues}) => {
             <div className="grid grid-cols-12 gap-10 mt-[40px]">
                 <div className="col-span-12 md:col-span-9">
                     
-                    <div className="grid grid-cols-1 md: grid-cols-3 gap-2">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                         {
                             allIssues.map(issue=>(
                                 <IssueCard 
