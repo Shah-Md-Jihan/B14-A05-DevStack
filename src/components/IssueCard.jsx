@@ -8,7 +8,7 @@ const IssueCard = ({issue, completedIssues, setCompletedIssues}) => {
             return toast.error('already completed');
         }
         setCompletedIssues([...completedIssues, issue]);
-        toast.success("Issue Resoved")
+        toast.success(`${issue.title} is added to your stack!`);
     }
 
     const isCompleted = completedIssues.some(iss=>iss.id === issue.id);
@@ -41,17 +41,17 @@ const IssueCard = ({issue, completedIssues, setCompletedIssues}) => {
                 <div className="flex justify-between items-center">
                     <p>{issue.tags}</p>
                     <p>{issue.level}</p>
-                    <p className="flex items-center gap-1"><Star />{issue.rating}</p>
+                    <p className="flex items-center gap-1"><span class="text-yellow-400 text-xl">★</span> <span className="mt-1">{issue.rating}</span></p>
                 </div>
 
                 <div>
                     <button 
                     onClick={handleCompletedTask} 
                     disabled={isCompleted}
-                    className="flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-white font-medium px-4 py-2 rounded-full shadow-md w-full disabled:cursor-not-allowed disabled:opacity-70"
+                    className={`flex items-center justify-center gap-2 ${isCompleted ? "bg-transparent text-pink-500" : "bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-white"} font-medium px-4 py-2 rounded-full w-full disabled:cursor-not-allowed disabled:opacity-70`}
                     >
-                    {isCompleted && <Check className="w-5 h-5 text-white" />}
-                    <span>{isCompleted ? "Completed" : "Add to Stack"}</span>
+                    {isCompleted && <Check className="w-5 h-5 text-pink-500" />}
+                    <span>{isCompleted ? "Added to Stack" : "Add to Stack"}</span>
                     </button>
                 </div>
 

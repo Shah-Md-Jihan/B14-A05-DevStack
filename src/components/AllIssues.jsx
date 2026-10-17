@@ -2,6 +2,7 @@ import toast from "react-hot-toast";
 import CompletedIssueCard from "./CompletedIssueCard";
 import IssueCard from "./IssueCard";
 
+
 const AllIssues = ({allIssues, completedIssues, setCompletedIssues}) => {
 
     return (
@@ -56,7 +57,7 @@ const AllIssues = ({allIssues, completedIssues, setCompletedIssues}) => {
                         : <button onClick={()=>{
                         
                         setCompletedIssues([])
-                        toast.error('All Issues Clear');
+                        toast.error('All technologies is deleted from you stack!');
                         
                         }} className="p-2 w-full border-red-500 border rounded text-red-500 mt-5">
                             Remove All

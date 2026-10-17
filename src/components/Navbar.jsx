@@ -4,7 +4,7 @@ import { useState } from "react";
 const Navbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
     return (
-        <nav> 
+        <nav className="sticky top-0 z-50 bg-white"> 
             <div className="flex justify-between py-4 items-center container mx-auto">
                 <div className="font-bold">
                     <img src="/src/assets/logo-text.png" alt="" />

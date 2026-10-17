@@ -6,7 +6,8 @@ const CompletedIssueCard = ({completedIssue, completedIssues, setCompletedIssues
     const handleDelete = ()=>{
         const newCompletedIssues = completedIssues.filter(iss=>iss.id!==completedIssue.id);
         setCompletedIssues(newCompletedIssues);
-        toast.error("Removed");
+        toast.error(`${completedIssue.title} is removed from your stack!`);
+        console.log(completedIssue);
     }
 
     return (

@@ -22,6 +22,7 @@ function App() {
       </Suspense>
       <Footer></Footer>
       <Toaster />
+
     </div>
   )
 }
