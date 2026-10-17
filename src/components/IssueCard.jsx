@@ -32,10 +32,6 @@ const IssueCard = ({issue, completedIssues, setCompletedIssues}) => {
                     <h3 className="font-semibold text-gray-900">
                         {issue.title}
                     </h3>
-
-                    <button className={`rounded-full ${isCompleted? "bg-green-500 text-white":"bg-yellow-300"} px-3 text-sm`}>
-                    ◆ {isCompleted? 'Completed': status}
-                    </button>
                 </div>
 
                 <p className="mt-1 text-sm text-gray-600">
