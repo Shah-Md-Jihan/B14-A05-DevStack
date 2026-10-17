@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <div className="flex container mx-auto justify-between items-center">
+        <div className="flex container mx-auto justify-between items-center flex-col md:flex-row px-5 md:px-0">
             <div>
                 <h2 className="text-4xl md:text-6xl font-bold">Build Your Ideal<br/>
                 <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">Development Stack</span>
